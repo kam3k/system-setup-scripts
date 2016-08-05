@@ -13,7 +13,7 @@ fi
 
 # install the required build dependencies:
 apt-get update
-apt-get install -y cmake ninja-build clang-${CLANG_VERSION} libclang-${CLANG_VERSION}-dev libclang-common-${CLANG_VERSION}-dev libclang1-${CLANG_VERSION} libllvm${CLANG_VERSION} libncurses5-dev libssl-dev git g++
+apt-get install -y cmake ninja-build clang-${CLANG_VERSION} libclang-${CLANG_VERSION}-dev libclang-common-${CLANG_VERSION}-dev libclang1-${CLANG_VERSION} libllvm${CLANG_VERSION}v4 libncurses5-dev libssl-dev git g++ libc++-dev libc++abi-dev
 
 INSTALL_PREFIX=/usr/local
 
@@ -33,5 +33,5 @@ git submodule update
 cd ${INSTALL_PREFIX}/src/rtags/build
 
 # Build and install the source:
-CXX=clang++-${CLANG_VERSION} cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} -DLIBCLANG_LLVM_CONFIG_EXECUTABLE=/usr/bin/llvm-config-${CLANG_VERSION} .. && ninja install
+CXX=clang++-${CLANG_VERSION} cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} -DLIBCLANG_LLVM_CONFIG_EXECUTABLE=/usr/bin/llvm-config-${CLANG_VERSION} -DCMAKE_CXX_FLAGS="-stdlib=libc++" .. && ninja install
 
