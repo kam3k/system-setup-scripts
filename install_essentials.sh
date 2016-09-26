@@ -8,6 +8,7 @@ apt-get install -y python-software-properties \
   git \
   htop \
   openssh-server \
+  fail2ban \
   tmux \
   zsh \
   autossh \
