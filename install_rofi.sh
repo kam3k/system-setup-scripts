@@ -6,7 +6,7 @@
 
 # First, install the build dependencies
 apt-get install -y git make gcc checkinstall autoconf automake pkg-config
-apt-get install -y libxinerama-dev libxft-dev libpango1.0-dev libcairo2-dev libpangocairo-1.0-0 libglib2.0-dev libx11-dev libstartup-notification0-dev libxcb-ewmh-dev libxcb-ewmh2
+apt-get install -y libxinerama-dev libxft-dev libpango1.0-dev libcairo2-dev libpangocairo-1.0-0 libglib2.0-dev libx11-dev libstartup-notification0-dev libxcb-ewmh-dev libxcb-ewmh2 libx11-xcb-dev
 
 INSTALL_PREFIX=/usr/local
 
