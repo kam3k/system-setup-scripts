@@ -25,4 +25,4 @@ git checkout ${ROFI_VERSION}
 autoreconf -i
 mkdir -p build && cd build
 ../configure
-make -j && checkinstall -D -y --pkgname rofi --pkgversion ${ROFI_VERSION} --pkggroup x11 make install
+make && checkinstall -D -y --pkgname rofi --pkgversion ${ROFI_VERSION} --pkggroup x11 make install

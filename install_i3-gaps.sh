@@ -19,4 +19,4 @@ fi
 
 cd ${INSTALL_PREFIX}/src/i3-gaps
 git checkout gaps && git pull
-make -j && checkinstall -D -y --pkgname i3-gaps --pkgversion 4.12 --pkggroup x11 make install
+make && checkinstall -D -y --pkgname i3-gaps --pkgversion 4.12 --pkggroup x11 make install

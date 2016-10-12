@@ -21,5 +21,5 @@ git fetch --tags
 git checkout ${RR_VERSION}
 mkdir -p build && cd build
 cmake ..
-make -j && checkinstall -D -y --pkgname rr --pkgversion ${RR_VERSION} make install
+make && checkinstall -D -y --pkgname rr --pkgversion ${RR_VERSION} make install
 

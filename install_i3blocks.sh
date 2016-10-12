@@ -17,4 +17,4 @@ fi
 I3BLOCKS_VERSION=1.4
 cd ${INSTALL_PREFIX}/src/i3blocks-gaps
 git pull
-make -j && checkinstall -D -y --pkgname i3blocks-gaps --pkgversion ${I3BLOCKS_VERSION} --pkggroup x11 make install
+make && checkinstall -D -y --pkgname i3blocks-gaps --pkgversion ${I3BLOCKS_VERSION} --pkggroup x11 make install
