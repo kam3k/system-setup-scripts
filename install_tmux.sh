@@ -11,6 +11,7 @@ apt-get install -y automake make gcc libevent-dev libncurses5-dev
 apt-get install -y xsel
 
 INSTALL_PREFIX=/usr/local
+TMUX_VERSION=2.3
 
 # Get the source:
 if [ ! -d ${INSTALL_PREFIX}/src/tmux ]; then
@@ -21,5 +22,6 @@ fi
 
 cd ${INSTALL_PREFIX}/src/tmux
 git pull
+git checkout ${TMUX_VERSION}
 sh autogen.sh
 ./configure && make && make install
