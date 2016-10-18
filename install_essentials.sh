@@ -10,6 +10,7 @@ apt-get install -y python-software-properties \
   openssh-server \
   fail2ban \
   tmux \
+  gawk \
   zsh \
   autossh \
   curl \
