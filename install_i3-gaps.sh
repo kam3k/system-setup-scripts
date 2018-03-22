@@ -18,5 +18,5 @@ if [ ! -d ${INSTALL_PREFIX}/src/i3-gaps ]; then
 fi
 
 cd ${INSTALL_PREFIX}/src/i3-gaps
-git checkout gaps && git pull
+git checkout 4.12 && git pull
 make && checkinstall -D -y --pkgname i3-gaps --pkgversion 4.12 --pkggroup x11 make install
