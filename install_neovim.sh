@@ -9,7 +9,7 @@ if hash nvim 2>/dev/null; then
   exit 0
 fi
 
-add-apt-repository -y ppa:neovim-ppa/unstable
+add-apt-repository -y ppa:neovim-ppa/stable
 apt-get update
 apt-get install -y neovim
 
