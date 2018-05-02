@@ -7,7 +7,7 @@
 apt-get install -y libxft-dev curl make gcc libxext-dev
 
 INSTALL_PREFIX=/usr/local
-ST_VERSION=0.7
+ST_VERSION=0.8.1
 
 # Get the source:
 if [ ! -d ${INSTALL_PREFIX}/src/st-${ST_VERSION} ]; then
