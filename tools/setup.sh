@@ -10,7 +10,7 @@ mkdir -p /opt
 INSTALL_DIR=/opt/system-setup-scripts
 
 if [ ! -d ${INSTALL_DIR} ]; then
-  git clone https://github.com/jmdaly/system-setup-scripts ${INSTALL_DIR}
+  git clone https://github.com/kam3k/system-setup-scripts ${INSTALL_DIR}
 fi
 
 cd ${INSTALL_DIR}

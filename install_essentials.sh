@@ -3,7 +3,7 @@
 # This script is used to install a series of packages that
 # I consider essential for me to have on a Linux computer.
 
-apt-get install -y python-software-properties \
+apt-get install -y \
   git \
   htop \
   openssh-server \
