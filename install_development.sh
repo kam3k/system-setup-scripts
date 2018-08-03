@@ -4,17 +4,14 @@
 # I use for software development
 
 apt-get install -y g++ \
-  clang \
+  libclang-6.0-dev \
   ccache \
   distcc \
   doxygen \
-  graphviz \
   libpython-dev \
   cppcheck \
   cmake \
   cmake-curses-gui \
-  cmake-qt-gui \
   make \
   ninja-build \
   build-essential
-

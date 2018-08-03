@@ -4,19 +4,18 @@
 # I consider essential for me to have on a Linux computer.
 
 apt-get install -y python-software-properties \
-  vim \
   git \
   htop \
   openssh-server \
-  fail2ban \
   tmux \
-  gawk \
   zsh \
   autossh \
   curl \
   cifs-utils \
   xsel \
-  pass \
   silversearcher-ag \
   stow \
+  nmap \
+  lxappearance \
+  vlc \
   unzip
