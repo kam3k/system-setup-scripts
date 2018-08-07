@@ -4,7 +4,7 @@
 
 # First, check if we have the correct sources for the newest version of
 # clang:
-CLANG_VERSION=3.8
+CLANG_VERSION=6.0
 if [ ! -f /etc/apt/sources.list.d/llvm.list ]; then
   wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|apt-key add -
   echo "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-${CLANG_VERSION} main" > /etc/apt/sources.list.d/llvm.list
