@@ -4,6 +4,8 @@
 # I consider essential for me to have on a Linux computer.
 
 apt-get install -y \
+  rxvt-unicode-256color \
+  gawk \
   git \
   htop \
   openssh-server \
