@@ -5,7 +5,7 @@
 # 14.04 is too old to use plugins with.
 
 # Build dependencies
-apt-get install -y automake make gcc libevent-dev libncurses5-dev
+apt-get install -y automake make gcc libevent-dev libncurses5-dev pkg-config
 
 # This dependency is required for using the system clipboard:
 apt-get install -y xsel
