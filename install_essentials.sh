@@ -9,7 +9,6 @@ apt-get install -y \
   git \
   htop \
   openssh-server \
-  tmux \
   zsh \
   autossh \
   curl \
@@ -18,6 +17,7 @@ apt-get install -y \
   silversearcher-ag \
   stow \
   nmap \
-  lxappearance \
   vlc \
-  unzip
+  unzip \
+  feh \
+  dunst
