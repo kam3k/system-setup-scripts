@@ -14,4 +14,6 @@ apt-get install -y g++ \
   cmake-curses-gui \
   make \
   ninja-build \
-  build-essential
+  build-essential \
+  gdb \
+  meld
