@@ -2,18 +2,10 @@
 
 # This script downloads, builds, and installs rtags
 
-# First, check if we have the correct sources for the newest version of
-# clang:
-CLANG_VERSION=6.0
-if [ ! -f /etc/apt/sources.list.d/llvm.list ]; then
-  wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|apt-key add -
-  echo "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-${CLANG_VERSION} main" > /etc/apt/sources.list.d/llvm.list
-  echo "deb-src http://llvm.org/apt/trusty/ llvm-toolchain-trusty-${CLANG_VERSION} main" >> /etc/apt/sources.list.d/llvm.list
-fi
-
 # install the required build dependencies:
+CLANG_VERSION=6.0
 apt-get update
-apt-get install -y cmake ninja-build clang-${CLANG_VERSION} libclang-${CLANG_VERSION}-dev libclang-common-${CLANG_VERSION}-dev libclang1-${CLANG_VERSION} libllvm${CLANG_VERSION}v4 libncurses5-dev libssl-dev git g++ libc++-dev libc++abi-dev
+apt-get install -y cmake ninja-build clang-${CLANG_VERSION} libclang-${CLANG_VERSION}-dev libclang-common-${CLANG_VERSION}-dev libclang1-${CLANG_VERSION} libllvm${CLANG_VERSION} libncurses5-dev libssl-dev git g++ libc++-dev libc++abi-dev
 
 INSTALL_PREFIX=/usr/local
 
@@ -33,5 +25,5 @@ git submodule update --init --recursive
 cd ${INSTALL_PREFIX}/src/rtags/build
 
 # Build and install the source:
-CXX=clang++-${CLANG_VERSION} cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} -DLIBCLANG_LLVM_CONFIG_EXECUTABLE=/usr/bin/llvm-config-${CLANG_VERSION} -DCMAKE_CXX_FLAGS="-stdlib=libc++" .. && ninja install
+CXX=clang++-${CLANG_VERSION} cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} -DLIBCLANG_LLVM_CONFIG_EXECUTABLE=/usr/bin/llvm-config-${CLANG_VERSION} .. && ninja install
 
