@@ -2,7 +2,7 @@
 
 # This script sets up a PPA to install the latest
 # version of tmux. The one that ships with Ubuntu
-# 14.04 is too old to use plugins with.
+# 16.04 is quite old.
 
 # Build dependencies
 apt-get install -y automake make gcc libevent-dev libncurses5-dev pkg-config

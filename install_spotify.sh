@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# This downloads and installs spotify.
+# This downloads and installs Spotify.
 
-# See if spotify is already installed:
+# See if Spotify is already installed:
 if hash spotify 2>/dev/null; then
   echo "Spotify already installed"
   exit 0

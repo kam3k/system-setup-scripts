@@ -3,7 +3,7 @@
 # This script sets up a PPA and installs
 # SimpleScreenRecorder.
 
-# See if vim is already installed:
+# See if SimpleScreenRecorder is already installed:
 if hash simplescreenrecorder 2>/dev/null; then
   echo "SimpleScreenRecorder already installed"
   exit 0
