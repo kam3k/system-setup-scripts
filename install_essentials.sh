@@ -20,4 +20,5 @@ apt-get install -y \
   vlc \
   unzip \
   feh \
-  dunst
+  dunst \
+  tree
