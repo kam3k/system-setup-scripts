@@ -17,7 +17,6 @@ apt-get install -y \
   silversearcher-ag \
   stow \
   nmap \
-  vlc \
   unzip \
   feh \
   dunst \
