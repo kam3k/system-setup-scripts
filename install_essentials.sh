@@ -21,5 +21,4 @@ apt-get install -y \
   unzip \
   feh \
   dunst \
-  tree \ 
-  redshift-gtk
+  tree
